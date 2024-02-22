@@ -1,16 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NO-GAME-NO-LIFE</title>
+    <link href="./output.css" rel="stylesheet">
+    <title>NO GAME NO LIFE</title>
     <link rel="shortcut icon" type="x-icon" href="img/butterfly-02.jpg" />
-    <meta http-equiv="refresh" content="0;url=./src/main.html" />
+    <style>
+        body ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            -ms-overflow-style: none;
+        }
+
+        html {
+            scrollbar-width: none;
+        }
+    </style>
 </head>
 
-<body class="bg-[rgb(40,40,40)]">
+<body class="bg-[rgb(40,40,40)] *:text-zinc-200 overflow-x-hidden overflow-y-auto">
 
+    <div
+        class="bg-[rgb(250,0,250)] bg-[url('img/butterfly.jpg')] bg-no-repeat bg-cover bg-center bg-blend-multiply grid justify-center items-center sticky top-0 z-50 w-full h-[8vh]">
+        <!--navigation-->
+
+        <h1 class="text-5xl mobileS:text-2xl">NO GAME NO LIFE</h1>
+
+    </div>
+
+
+    <div
+        class="grid grid-cols-[70vw_30vw] mobileS:grid-rows-[364px_1fr] mobileS:grid-cols-1 mobileM:mobileS:grid-rows-[382px_1fr] mobileL:mobileS:grid-rows-[411px_1fr] mt-[4vh] mobileS:mt-[1vh] tablet:grid-rows-[588px_1fr] laptop:grid-rows-1 laptop:grid-cols-[70vw_30vw] laptop:mt-[4vh] 4k:mt-[8vh]">
+        <!--video and menu-->
+
+        <div
+            class="grid laptopL:grid-rows-[530px_250px_1fr] mobileS:grid-rows-[187px_167px] mobileM:grid-rows-[205px_167px] mobileL:grid-rows-[234px_167px] tablet:grid-rows-[411px_167px] laptop:grid-rows-[383px_167px]">
+            <!--video-->
+
+            <div class="grid justify-center items-center">
+
+                <video class="aspect-video h-full w-full overflow-hidden rounded-lg" src="video/01.mp4" id="video"
+                    controls></video>
+
+            </div>
+
+            <div class="grid justify-center items-center" id="videoInfo">
+                <!--VIDEO INFO GOES HERE-->
+            </div>
+
+        </div>
+
+        <div class="bg-[rgb(33,33,33)] *:my-[2%]" id="manue"><!--menu-->
+
+            <!--ITEMS GOES HERE-->
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
