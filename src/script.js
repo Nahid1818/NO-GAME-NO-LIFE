@@ -80,6 +80,7 @@ video.addEventListener("ended", function () {
     let currentVideoIndexIn = currentVideoIndex + 1;
     let currentVideoIndexInfo = (currentVideoIndexIn < 10) ? "0" + currentVideoIndexIn : currentVideoIndexIn;
     playVideo(nextVideo);
+    if (currentVideoIndexInfo === 16) { currentVideoIndexInfo = "01"; };
     videoInfo.innerHTML = `<div class="h-[84%] mobileS:h-full" style="width: ${videoWidth}px;">
     <h1 class="my-[2%] text-xl font-bold">ENJOY OUR MUSIC VIDEO | MUSIC NO: ${currentVideoIndexInfo}</h1>
     <p>THANKS FOR WATCHING! AFTER YOU COMPLETE THIS WHOLE PLAYLIST, YOU CAN WATCH OUR NEXT PLAYLIST AND DON'T FORGET TO LEAVE A COMMENT.</p>
